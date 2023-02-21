@@ -90,3 +90,23 @@ print(course.find('P')) #.find is case-sensitive
 print(course.replace('beginners','Absolute beginners')) #.replace is case-sensitive
 print('Python' in course)
 '''
+
+#ARITHMETIC OPERTAIONS
+#numbers : integers, floats
+'''
+print(10 - 3)
+print(10 + 3)
+print(10 * 3)
+print(10 // 3)  #returns integer
+print(10 / 3)
+print(10 ** 3) #exponential
+print(10 % 3)
+'''
+
+#Argumentated assignment operator
+'''
+x = 10
+x +=3
+print(x)
+'''
+#operator precedence

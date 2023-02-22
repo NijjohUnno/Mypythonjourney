@@ -189,5 +189,15 @@ else:
 #PROJECT: Weight converter
 
 weight = int(input("Enter your weight "))
+unit = input("Enter L for pounds and K for kgs ")
+
+if unit.upper() == "L":
+    mass = weight * 0.45
+    print(f"You are {mass} KGs")
+elif unit.upper() == "K":
+    mass2 = weight / 0.45
+    print(f"You are {mass2} Pounds")
+else:
+    print("Wrong unit of measure selected")
 
 

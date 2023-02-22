@@ -187,7 +187,7 @@ else:
 '''
 
 #PROJECT: Weight converter
-
+'''
 weight = int(input("Enter your weight "))
 unit = input("Enter L for pounds and K for kgs ")
 
@@ -199,5 +199,11 @@ elif unit.upper() == "K":
     print(f"You are {mass2} Pounds")
 else:
     print("Wrong unit of measure selected")
+'''
 
-
+#WHILE LOOP
+i = 1
+while i <=5:
+    print("x" * i)
+    i = i+1
+print("Done")

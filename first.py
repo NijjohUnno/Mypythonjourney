@@ -109,4 +109,85 @@ x = 10
 x +=3
 print(x)
 '''
-#operator precedence
+#operator precedence   ...order of operations(() ->** -> */ -> +-)
+'''
+x = 10 + 3 * 2
+y = 10 + 3 + 2**2
+print (x)
+'''
+
+#MATH functions (round, abs, )
+'''
+import math
+x = 2.9
+print(round(x))
+print(math.ceil(x))
+print(math.floor(x))
+'''
+
+#IF STATEMENTS
+'''
+is_hot = False
+is_cold = True
+
+if is_hot:
+    print("It's a hot day")
+    print("Drink plenty of water")
+elif is_cold:
+    print("It's a cold day")
+    print("Wear warm clothes")
+else:
+    print("Enjoy your day")
+'''
+#IF Statement exercise
+'''
+price = 10000
+good_credit = False
+
+if good_credit:
+    down_payment = 0.1 * price
+else:
+    down_payment = 0.2 * price
+print(f"Please Pay ${down_payment}")
+'''
+
+#LOGICAL OPERATORS (and, or, not)
+'''
+has_high_income = True
+has_good_credit = False
+has_criminal_record = False
+
+if has_high_income and not has_criminal_record:
+    print("Eligible for a loan")
+else:
+    print("Kindly work on your credit score")
+'''
+
+#COMPARISON OPERATORS ( > , < , == , !=)
+'''
+x = int(input("Enter Temperature "))
+if x > 30:
+    print("It's a hot day")
+elif x < 10:
+    print("It's a cold")
+else:
+    print("It's neither hot or cold")
+'''
+
+#Comparison operator assignment
+'''
+name = input("Enter your name ")
+
+if len(name) < 3:
+    print("Name must be at least 3 characters")
+elif len(name) > 50:
+    print("Name can be a maximum of 50 characters")
+else:
+    print("Name looks good")
+'''
+
+#PROJECT: Weight converter
+
+weight = int(input("Enter your weight "))
+
+

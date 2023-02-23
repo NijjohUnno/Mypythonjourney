@@ -202,8 +202,53 @@ else:
 '''
 
 #WHILE LOOP
+'''
 i = 1
 while i <=5:
     print("x" * i)
     i = i+1
 print("Done")
+'''
+#Guessing game
+'''
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+
+while guess_count< guess_limit:
+    num = int(input("Guess a number "))
+    guess_count +=1
+    if num == secret_number:
+        print("Congratulations!")
+        break
+else:
+    print("Wrong Guess")
+'''
+#Car game
+command = ""
+started = False
+while True:
+    command = input("> ").lower()
+    if command == "start":
+        print("The car has started")
+        if started:
+            print("Car already started")
+        else:
+            started = True
+            print("Car Started...")
+    elif command == "stop":
+        if not started:
+            print("Car is already stopped")
+        else:
+           started = False
+           print("The car has stopped")
+    elif command == "help":
+        print('''
+start - to start the car
+stop - to stop the car
+quit - terminate session
+        ''')
+    elif command == "quit":
+        break
+    else:
+        print("I dont understand your input")

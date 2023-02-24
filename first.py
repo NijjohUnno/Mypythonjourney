@@ -225,6 +225,7 @@ else:
     print("Wrong Guess")
 '''
 #Car game
+'''
 command = ""
 started = False
 while True:
@@ -244,11 +245,65 @@ while True:
            print("The car has stopped")
     elif command == "help":
         print('''
+'''
 start - to start the car
 stop - to stop the car
 quit - terminate session
-        ''')
+        '''#)
+'''
     elif command == "quit":
         break
     else:
         print("I dont understand your input")
+'''
+
+#FOR LOOP
+'''
+for item in "Python":
+    print(item)
+
+for name in ['Oti', 'Unno', 'Nijjoh']: #for loop in a list
+    print(name)
+
+for num in range(7, 10, 2):
+    print(num)
+'''
+#FOR LOOP TEST
+'''
+price= [10, 20 ,30]
+total = 0
+for sum in price:
+    total+= sum
+print(total)
+'''
+#Nested Loop printing cordinates
+'''
+for x in range(4):
+    for y in range(3):
+        print(f"({x},{y})")
+
+numbers = [5, 2, 5, 2, 2]
+
+for num in numbers:
+    test = ""
+    for st in range(num): 
+        test += "X"
+    print(test)
+'''
+
+
+# Create the variable for user input
+user_input = ''
+# Create the list to store the values
+inputs = []
+
+# The while loop
+while user_input.lower() != 'done':
+    # Check if there's a value in user_input
+    if user_input:
+        # Store the value in the list
+        inputs.append(user_input)
+    # Prompt for a new value
+    user_input = input('Enter a new value, or done when done ')
+print(inputs)
+

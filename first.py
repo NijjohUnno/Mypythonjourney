@@ -291,7 +291,7 @@ for num in numbers:
     print(test)
 '''
 
-
+'''
 # Create the variable for user input
 user_input = ''
 # Create the list to store the values
@@ -307,3 +307,57 @@ while user_input.lower() != 'done':
     user_input = input('Enter a new value, or done when done ')
 print(inputs)
 
+'''
+#LISTS
+'''
+names= ['Alpha', 'Bravo','Charlie','Volcha']
+print(names[2])
+'''
+'''
+num = [2,4,5,3,3,2,4,4,3,4,3,5,7,7,8,6,9,3]
+max_val = num[0]
+for new in num:
+    if new > max_val:
+        max_val = new
+print(max_val)
+   ''' 
+#matrix
+'''
+mat = [
+    [2,4,5],
+    [3,5,2],
+    [5,6,3]
+]
+print(mat[2][2])
+#print all items in a matrix
+for row in mat:
+    for item in row:
+        print(item)
+'''
+#List methods --operations we can perform on a list
+'''
+numbers = [3,5,6,8,9,0,3,2,3]
+numbers.append(22)
+numbers.insert(0,11)
+print(numbers)
+'''
+#removing duplicates
+'''
+numbers = [3,5,6,8,9,0,3,2,3]
+uni = []
+for number in numbers:
+    if number not in uni:
+        uni.append(number)
+print(uni)
+
+#Tuples --immutable
+numbers = (9,6,7,5,6,6,6,5,4,1)
+'''
+#Dictionaries
+
+customer = {
+    "name":"John Oti",
+    "age":40,
+    "sport": "Tennis"
+}
+print(customer["name"])

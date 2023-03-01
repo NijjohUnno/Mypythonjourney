@@ -353,11 +353,44 @@ print(uni)
 #Tuples --immutable
 numbers = (9,6,7,5,6,6,6,5,4,1)
 '''
-#Dictionaries
-
+#Dictionaries //each key should be unique
+'''
 customer = {
     "name":"John Oti",
     "age":40,
     "sport": "Tennis"
 }
-print(customer["name"])
+print(customer["sport"])
+print(customer.get("age"))
+
+phone = input("Phone: ")
+gig_map = {
+    "1": "One ",
+    "2": "Two ",
+    "3": "Three ",
+    "4": "Four "
+}
+output = ""
+for ch in phone:
+    output += gig_map.get(ch, "!") + ""
+print(output)
+'''
+
+#FUNCTIONS -- Container of a few lines of code that perform specific functions
+'''
+def greatings():
+    print("Hello there")
+    print("Welcome Aboard ")
+
+print("Start")
+greatings()
+print("Stop")
+'''
+#Parameters
+def greatings(name):
+    print(f"Hello {name}")
+    print("Welcome Aboard ")
+
+greatings("Oti")
+greatings("Unno")
+
